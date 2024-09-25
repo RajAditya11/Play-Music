@@ -166,7 +166,8 @@ const navbar = document.getElementById('navbar');
 const backgrounds = [
     'url(./bck1.jpg)',
     'url(./bck2.jpg)',
-    'url(./bck3.jpg)'
+    'url(./bck3.jpg)',
+    .url(./bck1.jpg)',
 ];
 
 let currentIndex = 0;

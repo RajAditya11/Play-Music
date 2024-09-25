@@ -5,6 +5,7 @@ html{
 body{
     background-image: url(./music.jpg);
     background-size: cover;
+    background-repeat:no-repeat;
     width: 100%;
     height: auto;
     display: block;
