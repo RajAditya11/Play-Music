@@ -14,25 +14,25 @@
 </head>
 
 <body>
-    <nav id="navbar" style=" display: flex; align-items: center; background-image: url(./bck1.jpg);">
+    <nav id="navbar">
         <img src="./musical-bg.png" style="width: 100px; height: 100px; margin-left: 25px;" />
-        <h1  style="font-family: 'Pacifico', cursive; font-size: 40px;justify-content: flex-end ; color: white; margin-left: 1500px;">.By Raj Aditya</h1>
+        <span id="by" style="align-items: center; ">.By Raj Aditya</span>
     </nav>
 
     <table style="width: 100%;">
         <tr>
-            <td style="width: 70%; vertical-align: top; display: flex; align-items: center;">
-                <div class="Music Box">
+            <td style="width: 100%; vertical-align: top; display: flex; align-items: center;">
+                <div class="Music-Box">
 
                     <div id="playlist-type">
                         <h1 style="color: white; font-family: 'Pacifico', cursive; font-size: 38px;">Playlist </h1>
-                        <button id="Repeat" class="function-button" style="margin-left: 650px;">Repeat</button>
+                        <button id="Repeat" class="function-button" style="margin-left: 280px;">Repeat</button>
                         <button id="Shuffle" class="function-button" style="margin-left: 20px;">Shuffle</button>
                     </div>
 
                     <div class="Music">
                         <img id="mortalLogo" src="./mortalsCover.jpg" />
-                        <span style="font-size: 25px; padding: 35px;">Warriyo-Mortals | NCS </span>
+                        <span style="font-size: 15px; padding: 35px; margin-right: 10px;">Warriyo-Mortals | NCS </span>
                         <input type="range" id="timeline1" class="timeline" min="0" value="0" step="1" />
                         <button id="audio1" class="music-button">Play</button>
                         <audio id="audioPlayer1">
@@ -43,7 +43,7 @@
 
                     <div class="Music">
                         <img id="mortalLogo" src="./mortalsCover.jpg" />
-                        <span style="font-size: 25px; padding: 35px;">Why so Serious | NCS </span>
+                        <span style="font-size:15px; padding: 35px ; margin-right: 10px;">Why so Serious | NCS </span>
                         <input type="range" id="timeline2" class="timeline" min="0" value="0" step="1" />
                         <button id="audio2" class="music-button">Play</button>
                         <audio id="audioPlayer2">
@@ -54,7 +54,7 @@
 
                     <div class="Music">
                         <img id="mortalLogo" src="./mortalsCover.jpg" />
-                        <span style="font-size: 25px; padding: 35px;">Different Eyes | NCS </span>
+                        <span style="font-size: 15px; padding: 35px; margin-right: 10px; ">Different Eyes | NCS </span>
                         <input type="range" id="timeline3" class="timeline" min="0" value="0" step="1" />
                         <button id="audio3" class="music-button">Play</button>
                         <audio id="audioPlayer3">
@@ -65,7 +65,7 @@
 
                     <div class="Music">
                         <img id="mortalLogo" src="./mortalsCover.jpg" />
-                        <span style="font-size: 25px; padding: 35px;">Heroes-Tonight | NCS </span>
+                        <span style="font-size: 15px; padding: 35px;margin-right: 10px;">Heroes-Tonight | NCS </span>
                         <input type="range" id="timeline4" class="timeline" min="0" value="0" step="1" />
                         <button id="audio4" class="music-button">Play</button>
                         <audio id="audioPlayer4">
@@ -76,7 +76,7 @@
 
                     <div class="Music">
                         <img id="mortalLogo" src="./mortalsCover.jpg" />
-                        <span style="font-size: 25px; padding: 35px;">Home | NCS </span>
+                        <span style="font-size: 15px; padding: 35px;margin-right: 10px;">Home | NCS </span>
                         <input type="range" id="timeline5" class="timeline" min="0" value="0" step="1" />
                         <button id="audio5" class="music-button">Play</button>
                         <audio id="audioPlayer5">
@@ -87,7 +87,7 @@
 
                     <div class="Music">
                         <img id="mortalLogo" src="./mortalsCover.jpg" />
-                        <span style="font-size: 25px; padding: 35px;">Jealous | NCS </span>
+                        <span style="font-size: 15px; padding: 35px;margin-right: 10px;">Jealous | NCS </span>
                         <input type="range" id="timeline6" class="timeline" min="0" value="0" step="1" />
                         <button id="audio6" class="music-button">Play</button>
                         <audio id="audioPlayer6">
@@ -98,7 +98,7 @@
 
                     <div class="Music">
                         <img id="mortalLogo" src="./mortalsCover.jpg" />
-                        <span style="font-size: 25px; padding: 35px;">On & On | NCS </span>
+                        <span style="font-size: 15px; padding: 35px;margin-right: 10px;">On & On | NCS </span>
                         <input type="range" id="timeline7" class="timeline" min="0" value="0" step="1" />
                         <button id="audio7" class="music-button">Play</button>
                         <audio id="audioPlayer7">
@@ -109,7 +109,7 @@
 
                     <div class="Music">
                         <img id="mortalLogo" src="./mortalsCover.jpg" />
-                        <span style="font-size: 25px; padding: 35px;">Offline | NCS </span>
+                        <span style="font-size: 15px; padding: 35px;margin-right: 10px;">Offline | NCS </span>
                         <input type="range" id="timeline8" class="timeline" min="0" value="0" step="1" />
                         <button id="audio8" class="music-button">Play</button>
                         <audio id="audioPlayer8">
@@ -122,8 +122,8 @@
 
             </td>
 
-            <td style="width: 30%;">
-                <img style="width: 100%; height: auto;" src="./tape.jpg" />
+            <td style="width: 50%;">
+                <img id = "right-image"style="width: 100%; height: auto;" src="./tape.jpg" />
             </td>
         </tr>
     </table>

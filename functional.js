@@ -139,18 +139,24 @@ function updateTimeline(index) {
     }
 }
 
-// Call updateTimeline in the timeupdate event for each audio player
-audioPlayers.forEach((player, index) => {
-    player.addEventListener("timeupdate", () => updateTimeline(index)); // Update timeline as audio plays
-    player.onended = () => {
-        if (repeating) {
-            player.currentTime = 0; // Reset current time
-            playMusic(currentTrack); // Play the same track again
-        } else {
-            nextTrack(); // Play the next track
-        }
-    };
+// Update the timeline value as the audio plays
+function updateTimeline(index) {
+    const currentPlayer = audioPlayers[index];
+    if (currentPlayer.duration) {
+        // Update timeline thumb position based on song progress (not the timeline size)
+        timelines[index].value = (currentPlayer.currentTime / currentPlayer.duration) * 100;
+    }
+}
+
+// When the user changes the timeline, adjust the song's current time proportionally
+timelines.forEach((timeline, index) => {
+    timeline.addEventListener("input", () => {
+        const currentPlayer = audioPlayers[index];
+        // Adjust the current time based on the percentage (0-100)
+        currentPlayer.currentTime = (timeline.value / 100) * currentPlayer.duration;
+    });
 });
+
 
 
 
