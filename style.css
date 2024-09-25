@@ -1,0 +1,89 @@
+html{
+    width: 100%;
+}
+
+body{
+    background-image: url(./music.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin : 0px;
+}
+body > nav{
+    padding : 18px;
+    background-color: black;
+}
+div[class = "Music Box"]{
+    display:flexbox;
+    margin: 100px 50px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 3%;
+}
+div #playlist-type{
+    margin-left: 30px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+}
+div .Music{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    height: 75px;
+    background-color:azure;
+    border-radius:12dvh ;
+    padding: 2px;
+    margin: 10px;
+}
+.function-button {
+    margin-left: 300px;              
+    padding: 5px;                    
+    font-size: 20px;                 
+    background-color: black;        
+    color: white;                   
+    height: 55px;                    
+    width: 120px;                    
+    border-radius: 28px;             
+    cursor: pointer;                 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+.function-button:hover {
+    background-color: #2d8231;      
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); 
+}
+.music-button {
+    padding: 5px;
+    font-size: 20px;
+    background-color: black;  
+    color: white;             
+    height: 55px;              
+    width: 110px;              
+    border-radius: 28px;       
+    cursor: pointer;           
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+.music-button:hover {
+    background-color: #2d8231; 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); 
+}
+button:active {
+    box-shadow: 0 2px #2d8231; 
+    transform: translateY(2px); 
+  }
+#mortalLogo{
+    border-radius: 5dvh;
+    width: parent-width ;
+    height: 55px;
+    padding: 5px;
+}
+.Heading{
+    image-orientation: from-image;
+    color: white;
+    font-size: 45px;
+}
