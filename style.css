@@ -11,10 +11,11 @@ body{
     margin : 0px;
 }
 body > nav{
-    padding : 18px;
+    padding : 0px;
     background-color: black;
 }
 div[class = "Music Box"]{
+    width: 1500px;
     display:flexbox;
     margin: 100px 50px;
     padding: 20px;
@@ -32,7 +33,7 @@ div .Music{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 800px;
+    width: 1200px;
     height: 75px;
     background-color:azure;
     border-radius:12dvh ;
@@ -46,7 +47,7 @@ div .Music{
     background-color: black;        
     color: white;                   
     height: 55px;                    
-    width: 120px;                    
+    width: 180px;                    
     border-radius: 28px;             
     cursor: pointer;                 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
@@ -57,7 +58,7 @@ div .Music{
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); 
 }
 .music-button {
-    padding: 5px;
+    padding: 10px;
     font-size: 20px;
     background-color: black;  
     color: white;             
@@ -86,4 +87,11 @@ button:active {
     image-orientation: from-image;
     color: white;
     font-size: 45px;
+}
+
+.timeline {
+    margin-right: 120px;
+    justify-content: space-between;
+    width: 40%; /* Adjust width as needed */
+    margin-top: 10px; /* Space between button and timeline */
 }

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,9 +13,10 @@
     <title>Play Music </title>
 </head>
 
-<body> 
-    <nav>
-        <img class="Brand-Logo" src="./logo.png" width=150px , height=60px />
+<body>
+    <nav id="navbar" style=" display: flex; align-items: center; background-image: url(./bck1.jpg);">
+        <img src="./musical-bg.png" style="width: 100px; height: 100px; margin-left: 25px;" />
+        <h1  style="font-family: 'Pacifico', cursive; font-size: 40px;justify-content: flex-end ; color: white; margin-left: 1500px;">.By Raj Aditya</h1>
     </nav>
 
     <table style="width: 100%;">
@@ -24,118 +25,109 @@
                 <div class="Music Box">
 
                     <div id="playlist-type">
-                        <h1 style="color: white; font-family: 'Pacifico',cursive ; font-size: 38px;">Playlist </h1>
-                        <button class="function-button" style="margin-left: 400px;">Repeat</button>
-                        <button class="function-button" style="margin-left: 20px;">Shuffle</button>
+                        <h1 style="color: white; font-family: 'Pacifico', cursive; font-size: 38px;">Playlist </h1>
+                        <button id="Repeat" class="function-button" style="margin-left: 650px;">Repeat</button>
+                        <button id="Shuffle" class="function-button" style="margin-left: 20px;">Shuffle</button>
                     </div>
 
                     <div class="Music">
                         <img id="mortalLogo" src="./mortalsCover.jpg" />
                         <span style="font-size: 25px; padding: 35px;">Warriyo-Mortals | NCS </span>
-                        <button id="audioButton" class="music-button">Play</button>
-                        <audio id="audioPlayer">
+                        <input type="range" id="timeline1" class="timeline" min="0" value="0" step="1" />
+                        <button id="audio1" class="music-button">Play</button>
+                        <audio id="audioPlayer1">
                             <source src="mortals.mp3" type="audio/mp3">
                             Your browser does not support the audio element.
                         </audio>
-
-                        </button>
                     </div>
 
                     <div class="Music">
                         <img id="mortalLogo" src="./mortalsCover.jpg" />
                         <span style="font-size: 25px; padding: 35px;">Why so Serious | NCS </span>
-                        <button id="audioButton" class="music-button">Play</button>
-                        <audio id="audioPlayer">
+                        <input type="range" id="timeline2" class="timeline" min="0" value="0" step="1" />
+                        <button id="audio2" class="music-button">Play</button>
+                        <audio id="audioPlayer2">
                             <source src="why so serious.mp3" type="audio/mp3">
                             Your browser does not support the audio element.
                         </audio>
-
-                        </button>
                     </div>
 
                     <div class="Music">
                         <img id="mortalLogo" src="./mortalsCover.jpg" />
                         <span style="font-size: 25px; padding: 35px;">Different Eyes | NCS </span>
-                        <button id="audioButton" class="music-button">Play</button>
-                        <audio id="audioPlayer">
+                        <input type="range" id="timeline3" class="timeline" min="0" value="0" step="1" />
+                        <button id="audio3" class="music-button">Play</button>
+                        <audio id="audioPlayer3">
                             <source src="different eyes.mp3" type="audio/mp3">
                             Your browser does not support the audio element.
                         </audio>
-
-                        </button>
                     </div>
 
                     <div class="Music">
                         <img id="mortalLogo" src="./mortalsCover.jpg" />
                         <span style="font-size: 25px; padding: 35px;">Heroes-Tonight | NCS </span>
-                        <button id="audioButton" class="music-button">Play</button>
-                        <audio id="audioPlayer">
+                        <input type="range" id="timeline4" class="timeline" min="0" value="0" step="1" />
+                        <button id="audio4" class="music-button">Play</button>
+                        <audio id="audioPlayer4">
                             <source src="heroes tonight.mp3" type="audio/mp3">
                             Your browser does not support the audio element.
                         </audio>
-
-                        </button>
                     </div>
 
                     <div class="Music">
                         <img id="mortalLogo" src="./mortalsCover.jpg" />
                         <span style="font-size: 25px; padding: 35px;">Home | NCS </span>
-                        <button id="audioButton" class="music-button">Play</button>
-                        <audio id="audioPlayer">
+                        <input type="range" id="timeline5" class="timeline" min="0" value="0" step="1" />
+                        <button id="audio5" class="music-button">Play</button>
+                        <audio id="audioPlayer5">
                             <source src="home.mp3" type="audio/mp3">
                             Your browser does not support the audio element.
                         </audio>
-
-                        </button>
                     </div>
 
                     <div class="Music">
                         <img id="mortalLogo" src="./mortalsCover.jpg" />
-                        <span style="font-size: 25px; padding: 35px;">Jelous | NCS </span>
-                        <button id="audioButton" class="music-button">Play</button>
-                        <audio id="audioPlayer">
-                            <source src="jelous.mp3" type="audio/mp3">
+                        <span style="font-size: 25px; padding: 35px;">Jealous | NCS </span>
+                        <input type="range" id="timeline6" class="timeline" min="0" value="0" step="1" />
+                        <button id="audio6" class="music-button">Play</button>
+                        <audio id="audioPlayer6">
+                            <source src="jealous.mp3" type="audio/mp3">
                             Your browser does not support the audio element.
                         </audio>
-
-                        </button>
                     </div>
 
                     <div class="Music">
                         <img id="mortalLogo" src="./mortalsCover.jpg" />
                         <span style="font-size: 25px; padding: 35px;">On & On | NCS </span>
-                        <button id="audioButton" class="music-button">Play</button>
-                        <audio id="audioPlayer">
+                        <input type="range" id="timeline7" class="timeline" min="0" value="0" step="1" />
+                        <button id="audio7" class="music-button">Play</button>
+                        <audio id="audioPlayer7">
                             <source src="on & on.mp3" type="audio/mp3">
                             Your browser does not support the audio element.
                         </audio>
-
-                        </button>
                     </div>
 
                     <div class="Music">
                         <img id="mortalLogo" src="./mortalsCover.jpg" />
                         <span style="font-size: 25px; padding: 35px;">Offline | NCS </span>
-                        <button id="audioButton" class="music-button">Play</button>
-                        <audio id="audioPlayer">
+                        <input type="range" id="timeline8" class="timeline" min="0" value="0" step="1" />
+                        <button id="audio8" class="music-button">Play</button>
+                        <audio id="audioPlayer8">
                             <source src="offline.mp3" type="audio/mp3">
                             Your browser does not support the audio element.
                         </audio>
-
-                        </button>
-                    </div>      
+                    </div>
 
                 </div>
 
             </td>
-        
-            <td style = "width: 30% " >
-                <img style="width: 100%; height: auto;" src="./tape.jpg"/>     
+
+            <td style="width: 30%;">
+                <img style="width: 100%; height: auto;" src="./tape.jpg" />
             </td>
         </tr>
     </table>
 
-    </table>
     <script src="functional.js"></script>
 </body>
 
